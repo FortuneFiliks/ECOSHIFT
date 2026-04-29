@@ -1,0 +1,1550 @@
+/* @media(MAX-WIDTH : 600PX){ */
+	
+	
+/******START*******/	
+
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+    
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	background-color : #f1edda7F;
+		width : 100%;
+    }
+	
+    .mobile_nav_menu{ 
+		display : flex;
+		flex-direction : row;
+		width : 100%;
+		align-items : center;
+		justify-content : space-between;
+		background-color :#000000D7;
+		height : 70px;
+		position : fixed;
+		z-index : 5 !important;
+		top : 0;
+    	overflow-y : hidden !important;		
+	}
+	
+
+    .mobile_hamburger_button{
+      background : none;
+      border:none;
+      border-radius:100%;
+      height:50px;
+      width: 50px;
+      font-size:20px;
+      display : flex;
+      align-items : center;
+      justify-content : center; 
+	  margin-left : 25px;
+    }
+	
+	
+    .fa-bars{
+    	background : repeating-linear-gradient(to right,#AE8626,#F7EF8A,#D2AC47,#EDC967);
+    	-webkit-text-fill-color : transparent;
+    	background-clip : text;
+    	font-weight : 800;
+    	font-size : 1.25rem;
+    }
+	
+	
+    .mobile_hamburger_ripple {
+      box-sizing:border-box;
+      position:relative;
+    }
+    
+    .mobile_hamburger_ripple:before {
+      animation:mobile_ripple 2s ease-out infinite;
+      border:solid 2px #8d6a00;
+      border-radius:100%;
+      bottom:0;
+      box-sizing:border-box;
+      content:"";
+      left:0;
+      position:absolute;
+      right:0;
+      top:0;
+    }
+    
+    .mobile_hamburger_ripple:after {
+      animation:mobile_ripple 2s 1s ease-out infinite;
+      border:solid 2px #8d6a00;
+      border-radius:100%;
+      bottom:0;
+      box-sizing:border-box;
+      content:"";
+      left:0;
+      position:absolute;
+      right:0;
+      top:0;
+    }
+    @keyframes mobile_ripple {
+      0% {
+        opacity:.9;
+      }
+      100% {
+        border-radius:2em;
+        opacity:0.5;
+        transform:scale(1.2);
+      }
+    }	
+
+
+
+/*****WHATSUP BUTTON*****/
+    
+    .mobile_whatsapp_button{
+      background : none;
+      border:none;
+      border-radius:100%;
+      height:50px;
+      width: 50px;
+      font-size:20px;
+      display : flex;
+      align-items : center;
+      justify-content : center;
+	  margin-right : 25px;
+    }
+    
+    .mobile_email, .mobile_email:hover{
+    	text-decoration : none !important;
+    }
+    
+    #mobile_contact_icon{
+    	color : #25d366;
+    	font-weight : 800;
+    	font-size : 1.5rem;
+    }
+    
+    .mobile_whatsup_ripple{
+      box-sizing:border-box;
+      position:relative;
+    }
+    
+    .mobile_whatsup_ripple:before {
+      animation:mobile_ripple 2s ease-out infinite;
+      border:solid 2px  #25d366;
+      border-radius:100%;
+      bottom:0;
+      box-sizing:border-box;
+      content:"";
+      left:0;
+      position:absolute;
+      right:0;
+      top:0;
+    }
+    
+    .mobile_whatsup_ripple:after {
+      animation:mobile_ripple 2s 1s ease-out infinite;
+      border:solid 2px  #25d366;
+      border-radius:100%;
+      bottom:0;
+      box-sizing:border-box;
+      content:"";
+      left:0;
+      position:absolute;
+      right:0;
+      top:0;
+    }	
+	
+	
+	
+    nav{
+    	/* background : none; */
+    	/* background : #40404F; */
+    	/* background : linear-gradient(315deg, #55efc4 0%, #000000 74%);	 */	    
+    	background : #E6E6E0;
+    	width : 100%;
+    	position : absolute;
+    	z-index : 1;
+    	height : 60px;
+        /* box-shadow : 1px 1px 3px 3px #3e3e3e4C; */
+    	display : none;
+    	top : 0;
+		
+    	/* align-items : center; */
+    	/* padding-top : 20px; */
+    }
+    
+    .nav_brand{
+    	padding-left : 0;
+    	padding-right : 0;
+    }
+    
+    
+    
+    .mobile_logo{
+    	width : 40px;
+    	height : 50px;
+    	margin-top : 5px;
+    }
+    
+    #about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+    	display : none;
+    }
+    
+    .nav_list{
+    	display : none;
+    }
+    
+    .nav_list>div{
+    	height : 60px;
+    	margin : 0 20px;
+    	/* border : solid 2px black; */
+    	padding-top : 15px;
+    }
+    
+    .nav_link{
+    	font-weight : 800;
+        color : #1a3e4e;
+    	/* color : #00ffef; */
+    	/* color : #08787f; */
+    	/* color : #7a0632; */
+    	font-size : 0.7rem;	
+    }
+    
+    .nav_link:hover{
+    	color : #1a3e4e;
+    	/* text-decoration */
+    }
+    #about_item, #solutions_item, #projects_item, #portfolio_item, #partners_item, #media_item{
+    	position : relative;
+    }
+    
+    #about_item:hover #about_menu, #solutions_item:hover #solutions_menu, #projects_item:hover #projects_menu, #portfolio_item:hover #portfolio_menu, #partners_item:hover #partners_menu, #media_item:hover #media_menu{
+    	display : block;
+    }
+    
+    #about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+    	position : absolute;
+    	top : 59px;
+    	margin : 0;
+    	width : 300px;
+    	background-color : #ffffff;
+    	list-style-type : none;
+    	height : auto;
+    	border-bottom-left-radius : 5px;
+    	border-bottom-right-radius : 5px;
+    }
+    
+    
+    
+    .dropdown_item{
+    	font-size : 1.2em;
+    	font-weight : 600;
+    	color : #1a3e4e;
+    	margin : 10px 0;
+    }
+    
+    
+    .list_item{
+    	border-bottom : solid 1px #1a3e4e;
+    	padding : 20px;	
+    }
+    
+    .list_item:hover{
+    	background :#1a3e4e;
+    	.dropdown_item{
+    		color : #ffffff;
+    	}
+    	
+    }
+    
+    .country_item{
+    	border-bottom : solid 1px #1a3e4e;
+    	padding : 7.5px;	
+    }
+    
+    .country_item:hover{
+    	background :#1a3e4e;
+    	.dropdown_item{
+    		color : #ffffff;
+    	}
+    	
+    }
+    
+    
+    .liberia_menu, .nigeria_menu, .carbon_menu, .agriculture_menu, .security_menu, .health_menu, .press_menu, .climate_menu,.team_menu{
+    	display : none;
+    }
+    
+    .nigeria_item:hover .nigeria_menu{
+    	display : block;
+    }
+    
+    .liberia_item:hover .liberia_menu{
+    	display : block;
+    }
+    .carbon_item:hover .carbon_menu{
+    	display : block;
+    }
+    
+    .agriculture_item:hover .agriculture_menu{
+    	display : block;
+    }
+    .security_item:hover .security_menu{
+    	display : block;
+    }
+    .health_item:hover .health_menu{
+    	display : block;
+    }
+    .press_item:hover .press_menu{
+    	display : block;
+    }
+    .climate_item:hover .climate_menu{
+    	display : block;
+    }
+    
+    .team_item:hover .team_menu{
+    	display : block;
+    }
+    
+    .nigeria_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 36%;
+    	width : 200px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    
+    
+    .liberia_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 18%;
+    	width : 200px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .carbon_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 5px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .agriculture_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 75px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .security_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 225px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .health_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 370px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .press_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 5px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .climate_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 70px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    
+    .team_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 70px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : 70px;
+    	padding : 10px;
+    }
+    
+    .nigeria_list, .liberia_list, .carbon_list, .agriculture_list, .security_list, .health_list, .press_list,.climate_list, .team_list{
+    	font-size : 1.2em;
+    	font-weight : 600;
+    }
+    
+    .fa-search{
+    	/* color : #ffffff; */
+    	color : #1a3e4e;
+    }
+
+
+
+/*********MOBILE NAV MENU SECTION***/
+    .mobile_menu_section{
+    	width : 100%;
+    	position : fixed;
+    	height : 100%;
+    	background-color :#e3dacc;
+    	display : none;
+    	top : 70px;
+    	left : 0;
+		z-index : 5 !important;
+        /* transform: translateX(0); */
+        /* transition : transform 0.4s ease-in-out; */
+    }
+    
+    .mobile_menu_item{
+    	height : 85px;
+    	width : 100%;
+    	display : flex;
+    	align-items : center;
+    	padding-left : 25px;
+    	position : relative;
+    	/* justify-content : center; */
+    }
+    
+    .mobile_menu_image{
+    	width : 85px;
+    	height : 82px;
+    	border-radius : 2px;
+    	
+    }
+	#mobile_projects_left_menu{
+	    margin-left : -50px;	
+	}
+    
+    #mobile_team_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 80px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 180px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    #mobile_liberia_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 80px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 68px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    
+    #mobile_nigeria_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 100px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 132px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    
+    
+    #mobile_carbon_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 100px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    #mobile_agriculture_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 50px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 36px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    #mobile_security_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 50px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 100px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    #mobile_press_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 80px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    #mobile_climate_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 100px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    .mobile_team_dropdown_item,.mobile_liberia_dropdown_item, .mobile_nigeria_dropdown_item, .mobile_carbon_dropdown_item, .mobile_agriculture_dropdown_item, .mobile_security_dropdown_item, .mobile_press_dropdown_item, .mobile_climate_dropdown_item{
+    	color : #666666;
+    }
+    .mobile_team_dropdown_item:hover,.mobile_liberia_dropdown_item:hover, .mobile_nigeria_dropdown_item:hover, .mobile_carbon_dropdown_item:hover, .mobile_agriculture_dropdown_item:hover, .mobile_security_dropdown_item:hover, .mobile_press_dropdown_item:hover, .mobile_press_dropdown_item:hover{
+      color: #16181b;
+      text-decoration: none;
+      background-color: #e9ecef;
+    }
+    
+    
+    
+    
+    .mobile_menu_item:not(:last-child){
+    	border-bottom : solid 0.5px #29484a;
+    }
+    
+    .mobile_menu_link{
+    	color : #29484a;
+    	font-weight : 600;
+    	padding-left : 20px;
+    	cursor : pointer;
+    	font-size : 1em;
+    }
+    
+    
+    .mobile_menu_link:hover{
+    	color : #29484a;
+    	font-weight : 600;
+    	font-size : 1.25em;
+    	padding-left : 20px;
+    	cursor : pointer;
+    }
+
+
+
+
+/*****END*******/
+
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(MIN-WIDTH : 768PX){
+/******START*******/	
+
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+    
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	background-color : #f1edda7F;
+    }
+    .mobile_nav_menu{
+		display : none;
+	}	
+    
+    nav{
+    	/* background : none; */
+    	/* background : #40404F; */
+    	/* background : linear-gradient(315deg, #55efc4 0%, #000000 74%);	 */	    
+    	background : #E6E6E0;
+    	width : 100%;
+	    position : fixed;
+    	z-index : 1;
+    	height : 60px;
+        /* box-shadow : 1px 1px 3px 3px #3e3e3e4C; */
+    	display : flex;
+		flex-direction : row;
+    	align-items : normal;
+		justify-content : normal;		
+    	top : 0;
+    	/* align-items : center; */
+    	/* padding-top : 20px; */
+    }
+    
+    .nav_brand{
+    	padding-left : 0;
+    	padding-right : 2%;
+    }
+    
+    
+    
+    .logo{
+	width : 35px;
+	height : 45.5px;
+	   margin-top : 5px;
+	   margin-left : 5px;
+    }
+    
+    #about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+    	display : none;
+    }
+    
+    .nav_list{
+    	display : flex;
+    }
+    
+    .nav_list>div{
+    	height : 60px;
+    	margin : 0 15px;
+    	/* border : solid 2px black; */
+    	padding-top : 15px;
+    }
+    
+    .nav_link{
+    	font-weight : 800;
+        color : #1a3e4e;
+    	/* color : #00ffef; */
+    	/* color : #08787f; */
+    	/* color : #7a0632; */
+    	font-size : 0.7rem;	
+    }
+    
+    .nav_link:hover{
+    	color : #1a3e4e;
+    	/* text-decoration */
+    }
+    #about_item, #solutions_item, #projects_item, #portfolio_item, #partners_item, #media_item{
+    	position : relative;
+    }
+    
+    #about_item:hover #about_menu, #solutions_item:hover #solutions_menu, #projects_item:hover #projects_menu, #portfolio_item:hover #portfolio_menu, #partners_item:hover #partners_menu, #media_item:hover #media_menu{
+    	display : block;
+    }
+    
+    #about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+    	position : absolute;
+    	top : 59px;
+    	margin : 0;
+    	width : 300px;
+    	background-color : #ffffff;
+    	list-style-type : none;
+    	height : auto;
+    	border-bottom-left-radius : 5px;
+    	border-bottom-right-radius : 5px;
+    }
+    
+    
+    
+    .dropdown_item{
+    	font-size : 1.2em;
+    	font-weight : 600;
+    	color : #1a3e4e;
+    	margin : 10px 0;
+    }
+    
+    
+    .list_item{
+    	border-bottom : solid 1px #1a3e4e;
+    	padding : 20px;	
+    }
+    
+    .list_item:hover{
+    	background :#1a3e4e;
+    	.dropdown_item{
+    		color : #ffffff;
+    	}
+    	
+    }
+    
+    .country_item{
+    	border-bottom : solid 1px #1a3e4e;
+    	padding : 7.5px;	
+    }
+    
+    .country_item:hover{
+    	background :#1a3e4e;
+    	.dropdown_item{
+    		color : #ffffff;
+    	}
+    	
+    }
+    
+    
+    .liberia_menu, .nigeria_menu, .carbon_menu, .agriculture_menu, .security_menu, .health_menu, .press_menu, .climate_menu,.team_menu{
+    	display : none;
+    }
+    
+    .nigeria_item:hover .nigeria_menu{
+    	display : block;
+    }
+    
+    .liberia_item:hover .liberia_menu{
+    	display : block;
+    }
+    .carbon_item:hover .carbon_menu{
+    	display : block;
+    }
+    
+    .agriculture_item:hover .agriculture_menu{
+    	display : block;
+    }
+    .security_item:hover .security_menu{
+    	display : block;
+    }
+    .health_item:hover .health_menu{
+    	display : block;
+    }
+    .press_item:hover .press_menu{
+    	display : block;
+    }
+    .climate_item:hover .climate_menu{
+    	display : block;
+    }
+    
+    .team_item:hover .team_menu{
+    	display : block;
+    }
+    
+    .nigeria_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 36%;
+    	width : 200px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    
+    
+    .liberia_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 18%;
+    	width : 200px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .carbon_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 5px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .agriculture_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 75px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .security_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 225px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .health_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 370px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .press_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 5px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .climate_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 70px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    
+    .team_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 70px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : 70px;
+    	padding : 10px;
+    }
+    
+    .nigeria_list, .liberia_list, .carbon_list, .agriculture_list, .security_list, .health_list, .press_list,.climate_list, .team_list{
+    	font-size : 1.2em;
+    	font-weight : 600;
+    }
+    
+    .fa-search{
+    	/* color : #ffffff; */
+    	color : #1a3e4e;
+    }
+
+    .mobile_menu_section{
+    	display : none;
+    	width : 100%;
+    	position : fixed;
+    	height : 100%;
+    	background-color :#e3dacc;
+    	top : 0;
+    	left : 0;
+        transform: translateX(-100%);
+        transition : transform 0.4s ease-in-out;
+    }
+
+
+	.fa-angle-down{
+		display : none !important;
+	}
+	
+
+
+/*****END*******/
+
+}
+
+
+
+
+
+
+
+@media(MIN-WIDTH : 992PX){
+	
+	
+/******START*******/	
+
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+    
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	background-color : #f1edda7F;
+    }
+    .mobile_nav_menu{
+		display : none;
+	}	
+    
+    nav{
+    	/* background : none; */
+    	/* background : #40404F; */
+    	/* background : linear-gradient(315deg, #55efc4 0%, #000000 74%);	 */	    
+    	background : #E6E6E0;
+    	width : 100%;
+	    position : fixed;
+    	z-index : 1;
+    	height : 60px;
+        /* box-shadow : 1px 1px 3px 3px #3e3e3e4C; */
+    	display : flex;
+    	top : 0;
+    	/* align-items : center; */
+    	/* padding-top : 20px; */
+    }
+    
+    .nav_brand{
+    	padding-left : 1%;
+    	padding-right : 2%;
+    }
+    
+    
+    
+    .logo{
+	width : 50px;
+	height : 65px;
+	   margin-top : 5px;
+    }
+    
+    #about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+    	display : none;
+    }
+    
+    .nav_list{
+    	display : flex;
+    }
+    
+    .nav_list>div{
+    	height : 60px;
+    	margin : 0 20px;
+    	/* border : solid 2px black; */
+    	padding-top : 15px;
+    }
+    
+    .nav_link{
+    	font-weight : 800;
+        color : #1a3e4e;
+    	/* color : #00ffef; */
+    	/* color : #08787f; */
+    	/* color : #7a0632; */
+    	font-size : 0.7rem;	
+    }
+    
+    .nav_link:hover{
+    	color : #1a3e4e;
+    	/* text-decoration */
+    }
+    #about_item, #solutions_item, #projects_item, #portfolio_item, #partners_item, #media_item{
+    	position : relative;
+    }
+    
+    #about_item:hover #about_menu, #solutions_item:hover #solutions_menu, #projects_item:hover #projects_menu, #portfolio_item:hover #portfolio_menu, #partners_item:hover #partners_menu, #media_item:hover #media_menu{
+    	display : block;
+    }
+    
+    #about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+    	position : absolute;
+    	top : 59px;
+    	margin : 0;
+    	width : 300px;
+    	background-color : #ffffff;
+    	list-style-type : none;
+    	height : auto;
+    	border-bottom-left-radius : 5px;
+    	border-bottom-right-radius : 5px;
+    }
+    
+    
+    
+    .dropdown_item{
+    	font-size : 1.2em;
+    	font-weight : 600;
+    	color : #1a3e4e;
+    	margin : 10px 0;
+    }
+    
+    
+    .list_item{
+    	border-bottom : solid 1px #1a3e4e;
+    	padding : 20px;	
+    }
+    
+    .list_item:hover{
+    	background :#1a3e4e;
+    	.dropdown_item{
+    		color : #ffffff;
+    	}
+    	
+    }
+    
+    .country_item{
+    	border-bottom : solid 1px #1a3e4e;
+    	padding : 7.5px;	
+    }
+    
+    .country_item:hover{
+    	background :#1a3e4e;
+    	.dropdown_item{
+    		color : #ffffff;
+    	}
+    	
+    }
+    
+    
+    .liberia_menu, .nigeria_menu, .carbon_menu, .agriculture_menu, .security_menu, .health_menu, .press_menu, .climate_menu,.team_menu{
+    	display : none;
+    }
+    
+    .nigeria_item:hover .nigeria_menu{
+    	display : block;
+    }
+    
+    .liberia_item:hover .liberia_menu{
+    	display : block;
+    }
+    .carbon_item:hover .carbon_menu{
+    	display : block;
+    }
+    
+    .agriculture_item:hover .agriculture_menu{
+    	display : block;
+    }
+    .security_item:hover .security_menu{
+    	display : block;
+    }
+    .health_item:hover .health_menu{
+    	display : block;
+    }
+    .press_item:hover .press_menu{
+    	display : block;
+    }
+    .climate_item:hover .climate_menu{
+    	display : block;
+    }
+    
+    .team_item:hover .team_menu{
+    	display : block;
+    }
+    
+    .nigeria_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 36%;
+    	width : 200px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    
+    
+    .liberia_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 18%;
+    	width : 200px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .carbon_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 5px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .agriculture_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 75px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .security_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 225px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .health_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 370px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .press_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 5px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    .climate_menu{
+    	position : absolute;
+    	right : 300px;
+    	background : #ffffff;
+    	top : 70px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : auto;
+    	padding : 10px;
+    }
+    
+    .team_menu{
+    	position : absolute;
+    	left : 300px;
+    	background : #ffffff;
+    	top : 70px;
+    	width : 275px;
+    	list-style-type : none;
+    	height : 70px;
+    	padding : 10px;
+    }
+    
+    .nigeria_list, .liberia_list, .carbon_list, .agriculture_list, .security_list, .health_list, .press_list,.climate_list, .team_list{
+    	font-size : 1.2em;
+    	font-weight : 600;
+    }
+    
+    .fa-search{
+    	/* color : #ffffff; */
+    	color : #1a3e4e;
+    }
+
+    .mobile_menu_section{
+    	display : none;
+    	width : 100%;
+    	position : fixed;
+    	height : 100%;
+    	background-color :#e3dacc;
+    	top : 0;
+    	left : 0;
+        transform: translateX(-100%);
+        transition : transform 0.4s ease-in-out;
+    }
+
+	.fa-angle-down{
+		display : inline;
+	}
+
+
+/*****END*******/
+
+}
+
+
+
+
+
+
+@media(MIN-WIDTH : 1200PX){
+	
+	
+/******START*******/	
+
+*{
+    margin : 0;
+	padding : 0;
+}
+
+body{
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	background-color : #f1edda7F;
+}
+
+.mobile_nav_menu{
+	display : none;
+}
+
+nav{
+	/* background : none; */
+	/* background : #40404F; */
+	/* background : linear-gradient(315deg, #55efc4 0%, #000000 74%);	 */	    
+	background : #E6E6E0;
+	width : 100%;
+	position : fixed;
+	z-index : 1;
+	height : 80px;
+    /* box-shadow : 1px 1px 3px 3px #3e3e3e4C; */
+	display : flex;
+	top : 0;
+	/* background : #ffffff; */
+	/* border-bottom-style :  double 1.5px var(--accent_color);  */
+
+
+	/* align-items : center; */
+	/* padding-top : 20px; */
+}
+
+.nav_brand{
+	padding-left : 2%;
+	padding-right : 5%;
+}
+
+
+
+.logo{
+	width : 50px;
+	height : 65px;
+	margin-top : 5px;
+}
+
+#about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+	display : none;
+}
+
+.nav_list{
+	display : flex;
+}
+
+.nav_list>div{
+	height : 60px;
+	margin : 0 20px;
+	/* border : solid 2px black; */
+	padding-top : 15px;
+}
+
+.nav_link{
+	font-weight : 700;
+    color : #1a3e4e;
+	/* color : #00ffef; */
+	/* color : #08787f; */
+	/* color : #7a0632; */
+	font-size : 1em;	
+}
+
+.nav_link:hover{
+	color : #1a3e4e;
+	/* text-decoration */
+}
+#about_item, #solutions_item, #projects_item, #portfolio_item, #partners_item, #media_item{
+	position : relative;
+}
+
+#about_item:hover #about_menu, #solutions_item:hover #solutions_menu, #projects_item:hover #projects_menu, #portfolio_item:hover #portfolio_menu, #partners_item:hover #partners_menu, #media_item:hover #media_menu{
+	display : block;
+}
+
+#about_menu, #solutions_menu, #projects_menu, #portfolio_menu, #partners_menu, #media_menu{
+	position : absolute;
+	top : 59px;
+	margin : 0;
+	width : 300px;
+	background-color : #ffffff;
+	list-style-type : none;
+	height : auto;
+	border-bottom-left-radius : 5px;
+	border-bottom-right-radius : 5px;
+}
+
+
+
+.dropdown_item{
+	font-size : 1.2em;
+	font-weight : 600;
+	color : #1a3e4e;
+	margin : 10px 0;
+}
+
+
+.list_item{
+	border-bottom : solid 1px #1a3e4e;
+	padding : 20px;	
+}
+
+.list_item:hover{
+	background :#1a3e4e;
+	.dropdown_item{
+		color : #ffffff;
+	}
+	
+}
+
+.country_item{
+	border-bottom : solid 1px #1a3e4e;
+	padding : 7.5px;	
+}
+
+.country_item:hover{
+	background :#1a3e4e;
+	.dropdown_item{
+		color : #ffffff;
+	}
+	
+}
+
+
+.liberia_menu, .nigeria_menu, .carbon_menu, .agriculture_menu, .security_menu, .health_menu, .press_menu, .climate_menu,.team_menu{
+	display : none;
+}
+
+.nigeria_item:hover .nigeria_menu{
+	display : block;
+}
+
+.liberia_item:hover .liberia_menu{
+	display : block;
+}
+.carbon_item:hover .carbon_menu{
+	display : block;
+}
+
+.agriculture_item:hover .agriculture_menu{
+	display : block;
+}
+.security_item:hover .security_menu{
+	display : block;
+}
+.health_item:hover .health_menu{
+	display : block;
+}
+.press_item:hover .press_menu{
+	display : block;
+}
+.climate_item:hover .climate_menu{
+	display : block;
+}
+
+.team_item:hover .team_menu{
+	display : block;
+}
+
+.nigeria_menu{
+	position : absolute;
+	left : 300px;
+	background : #ffffff;
+	top : 36%;
+	width : 200px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+
+
+.liberia_menu{
+	position : absolute;
+	left : 300px;
+	background : #ffffff;
+	top : 18%;
+	width : 200px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+.carbon_menu{
+	position : absolute;
+	right : 300px;
+	background : #ffffff;
+	top : 5px;
+	width : 275px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+.agriculture_menu{
+	position : absolute;
+	right : 300px;
+	background : #ffffff;
+	top : 75px;
+	width : 275px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+.security_menu{
+	position : absolute;
+	right : 300px;
+	background : #ffffff;
+	top : 225px;
+	width : 275px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+.health_menu{
+	position : absolute;
+	right : 300px;
+	background : #ffffff;
+	top : 370px;
+	width : 275px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+.press_menu{
+	position : absolute;
+	right : 300px;
+	background : #ffffff;
+	top : 5px;
+	width : 275px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+.climate_menu{
+	position : absolute;
+	right : 300px;
+	background : #ffffff;
+	top : 70px;
+	width : 275px;
+	list-style-type : none;
+	height : auto;
+	padding : 10px;
+}
+
+.team_menu{
+	position : absolute;
+	left : 300px;
+	background : #ffffff;
+	top : 70px;
+	width : 275px;
+	list-style-type : none;
+	height : 70px;
+	padding : 10px;
+}
+
+.nigeria_list, .liberia_list, .carbon_list, .agriculture_list, .security_list, .health_list, .press_list,.climate_list, .team_list{
+	font-size : 1.2em;
+	font-weight : 600;
+}
+
+.fa-search{
+	/* color : #ffffff; */
+	color : #1a3e4e;
+}
+
+
+.last_level_link{
+    color :#1a3e4e; 
+}
+
+
+.mobile_menu_section{
+	display : none;
+	width : 100%;
+	position : fixed;
+	height : 100%;
+	background-color :#e3dacc;
+	top : 0;
+	left : 0;
+    transform: translateX(-100%);
+    transition : transform 0.4s ease-in-out;
+}
+
+	.fa-angle-down{
+		display : inline;
+	}
+
+
+/*****END*******/
+
+}
+
+
+
+
+
+

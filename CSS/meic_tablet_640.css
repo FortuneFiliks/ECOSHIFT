@@ -1,0 +1,1127 @@
+@media(min-width : 640px)  and (hover : none) and (pointer : coarse){
+/****START*****/
+
+    :root{
+	    --pri_color : #1a3e4e;
+		--sec_color : #E6E6E0;
+		--accent_color : #592917;
+	}
+	
+	
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+    
+    html{
+    	/* scroll-snap-type : y mandatory !important; */
+    }
+    
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+		background-color :var(--sec_color);		
+    }
+	
+    nav{
+    	/* background : none; */
+    	/* background : #40404F; */
+    	/* background : linear-gradient(315deg, #55efc4 0%, #000000 74%);	 */	    
+    	background : #E6E6E0;
+    	width : 100%;
+    	position : fixed;
+    	z-index : 2;
+    	height : 80px;
+        box-shadow : 1px 1px 3px 3px #3e3e3e4C;
+    	top : 0;
+    	border-bottom :  double 1.5px var(--accent_color);
+        display : none;		
+    }
+	
+	.nav_menu_flex{
+    	width : 95%;	
+		height : 100%;
+    	display : flex;
+		justify-content : space-between;	
+		align-items : center;		
+		margin : 0 auto 0 auto;
+	}
+	
+	#hamburger_icon{
+		font-size : 2rem;
+		color : var(--pri_color);
+		cursor : pointer;
+	}
+	
+	.brand_logo{
+		width : 50px;
+		height : 65px;
+	}
+    
+/******************************FIRST SECTION******************************/
+    #first_section{
+    	width : 100%;
+		background-image : url("../IMAGES/aerial-view-cityscape.webp");
+		background-size : cover;
+		background-position : center;
+    	min-height : 50dvh;
+    	min-height : 50vh;
+        /* scroll-snap-align : start; */
+		color : #ffffff;
+		position : relative;		
+    }
+	.first_section_content{
+	    background : #010b13D8;
+        width : 100%;
+    	min-height : 50dvh;
+    	min-height : 50vh;	
+        padding : 4rem 0 0 0;	
+		
+	}
+	
+	.first_section_heading{
+		font-size : 2.5rem;
+		font-weight : 600;
+		text-align : center;
+	}
+	
+	.project_alpha_heading{
+		font-size : 1.75rem;
+		text-align : center;
+	}
+	
+	.first_section_subline{
+		font-size : 1.75rem;
+		text-align : center;
+		padding : 0 0 10rem 0;
+	}
+	
+	.ecoshift_logo{
+		width : 100px;
+		height : 128px;
+		position : absolute;
+		bottom : 0;
+		left : 0;
+	}
+	
+	.zambia_flag{
+		width : 150px;
+		height : 100px;
+		position : absolute;
+		bottom : 0;
+		right : 0;		
+	}
+	
+	.presentation_details{
+		text-align : center;
+	}
+
+/******************************MEIC SECTION******************************/
+
+    .meic_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.meic_section_content{
+		
+		width : 100%;
+		font-size : 1.12rem;
+	}
+	
+    .text_heading{
+		font-size : 1.75rem;
+		font-weight : 600;
+		padding : 2rem 0 0 0;
+		text-align : center;		
+	}
+
+
+
+	.text_first_flex{
+		display : flex;
+		flex-direction : column-reverse;
+		row-gap : 0;
+		column-gap : 30px;
+		margin : 20px 0 0 0;
+		align-items : center;
+	}
+	
+	.image_first_flex{
+		display : flex;
+		flex-direction : column;
+		row-gap : 0;
+		column-gap : 30px;
+		margin : 30px 0 0 0;
+		align-items : center;
+	}	
+	
+	.text_desc_image{
+		width : 300px;
+		height : 167px;
+		margin : 1.5rem 0 1.5rem 0;		
+	}
+	
+	.about_us_img{
+		width : 375px;
+		height : 375px;
+	}
+	
+	.process_image{
+		width :250px;
+	    height : 145px;
+		margin : 1.5rem 0 1.5rem 0;		
+	}	
+	
+/******************************PAGE DIVIDER SECTION******************************/
+    .page_divider_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+    }	
+	
+	.page_divider_section_content{
+		width : 100%;
+    	min-height : auto;
+    	min-height : auto;
+		font-size : 1.15rem;
+		display : flex;
+		align-items : center;
+		justify-content : center;
+	}	
+	
+	.page_divider_heading{
+		font-weight : 600;
+		font-size : 3.5rem;
+		text-align : center;
+		/* padding : 0 0 15px 0; */
+        color : var(--accent_color);
+	}	
+	
+/******************************THIRD SECTION******************************/
+
+    #third_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.third_section_content{
+		
+		width : 100%;
+		font-size : 1.12rem;
+	}	
+
+    .third_section_flex{
+		display : flex;
+		flex-direction : column;
+		row-gap : 0px;
+		column-gap : 30px;
+	}
+	
+	.third_section_flex>div{
+	    flex : 1;	
+		
+	}
+	
+	.mission_image{
+		width : 100%;
+		height : 200px;
+		display : none;
+	}
+	
+	.zambia_waving_flag{
+		width : 350px;
+		height : 455px;
+		display : none;
+	}
+	
+	.zambia_waving_flag_small{
+		width : 400px;
+		height : 267px;				
+	    display : block;
+		margin : 0 auto 0 auto;
+	}	
+	
+	.mission_heading, .vision_heading{
+		font-weight : 600;
+		font-size : 1.35rem;
+	}	
+	
+/******************************FOURTH SECTION******************************/
+
+    #fourth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.fourth_section_content{
+		
+		width : 100%;
+	}
+	
+	.fourth_section_heading{
+		font-weight : 600;
+		font-size : 3.5rem;
+		text-align : center;
+	}
+	
+	.meic_diagram{
+		width :600px;
+		height :333px;
+		display : block;
+		margin-left : auto;
+		margin-right : auto;
+		margin-top : 30px;
+		margin-bottom : 30px;
+	}
+
+    .project_details_heading{
+		font-weight : 700;
+		font-size : 3rem;
+		text-align : center;
+	}
+
+
+    .anton-regular {
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+/******************************FIFTH SECTION******************************/
+
+    #fifth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.fifth_section_content{
+		
+		width : 100%;
+		font-size : 1.15rem;
+	}
+	
+	.fifth_section_heading{
+		font-weight : 600;
+		font-size : 2.75rem;
+		text-align : center;
+		padding : 10px 0 20px 0;
+	}
+	
+	.fifth_section_subheading{
+		font-weight : 600;
+	}
+	
+/******************************SIXTH SECTION******************************/
+
+    #sixth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.sixth_section_content{
+		
+		width : 100%;
+		font-size : 1.12rem;
+	}
+	
+	.sixth_section_heading{
+		font-weight : 600;
+		font-size : 2.75rem;
+		text-align : center;
+		padding : 10px 0 20px 0;
+	}
+	
+	.sixth_section_subheading{
+		font-weight : 600;
+	}
+
+/******************************SEVENTH SECTION******************************/
+
+    #seventh_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	
+	.seventh_section_content{
+		
+		width : 100%;
+		font-size : 1.15rem;
+	}
+	
+	.seventh_section_heading{
+		font-weight : 600;
+		font-size : 2.75rem;
+		text-align : center;
+		padding : 10px 0 20px 0;
+	}
+	
+	.seventh_section_subheading{
+		font-weight : 600;
+	}
+	
+/******************************EIGHT SECTION******************************/
+
+    #eight_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 6rem 4rem 6rem;
+    	min-height : auto;
+    	min-height : auto;
+	}
+	
+	.eight_section_content{
+		
+		width : 100%;
+		font-size : 1.15rem;
+	}
+	
+	.eight_section_heading{
+		font-weight : 700;
+		font-size : 1.5rem;
+		text-align : center;
+		padding : 0 0 20px 0;
+	}
+	
+	.eight_section_flex{
+		width : 100%;
+		display : flex;
+		flex-direction : row;
+		row-gap : 0;
+		column-gap : 50px;
+		/* align-items : center; */
+	}
+	
+	.esc_loop_img{
+		width : 375px;
+		height : 375px;
+		mix-blend-mode : multiply;
+	}
+
+/******************************NINTH SECTION******************************/
+
+    #ninth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 0 4rem 0;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.ninth_section_content{
+		
+		width : 70%;
+		font-size : 1.15rem;
+		margin-left : auto;
+		margin-right : auto;
+	}	
+	
+	.ninth_section_heading{
+		font-weight : 600;
+		font-size : 2.5rem;
+		text-align : center;
+		padding : 0 0 20px 0;
+	}	
+	
+	.land_requirement_background{
+		background-image : url("../IMAGES/Generated Image January 18, 2026 - 5_29AM.webp");
+		background-size : cover;
+		width : 100%;
+		height : 498px;
+	}
+	
+	.land_requirement_background h3{
+		font-size : 2rem;
+		font-weight : 700;
+		text-align : center;
+	}
+	.flat_land_heading{
+		transform : translateY(10px);
+		color : var(--accent_color);
+	}
+	
+	.arable_land_heading{
+	    transform : translateY(5px);
+		color : var(--sec_color);
+	}
+	.forest_land_heading{
+		transform : translateY(75px);
+		color : #ffffff;
+	}
+	
+/******************************TENTH SECTION******************************/
+
+    #tenth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.tenth_section_content{
+		
+		width : 100%;
+		font-size : 1.15rem;
+	}	
+	
+	.tenth_section_heading{
+		font-weight : 600;
+		font-size : 2rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+	}	
+/******************************ELEVENTH SECTION******************************/
+
+    #eleventh_section{
+		width : 100%;
+		background-color : #ffffff;
+		color : var(--pri_color);
+		padding : 4rem 2rem 4rem 2rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.eleventh_section_content{
+		
+		width : 100%;
+		font-size : 1rem;
+	}	
+	
+	.eleventh_section_heading{
+		font-weight : 600;
+		font-size : 1.5rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+	}	
+	.risks_table{
+		background-color : var(--pri_color);
+		color : #ffffff;
+		font-size : 0.75rem;
+	}	
+	
+    .img_wrap {
+        width : 75%;
+        /* height : 333px; */
+		margin-left : auto;
+        margin-right : auto;
+    }	
+	
+	
+	.business_contruct_image{
+		width : 100%;
+		height : 100%;
+		mix-blend-mode : multiply;
+        object-fit: cover;
+        transition: transform 2s ease;
+        transform-origin: center;		
+	}
+	
+    .img_wrap:hover .business_contruct_image{
+      transform: scale(1.05);
+    }	
+/******************************TWELFTH SECTION******************************/
+
+    #twelfth_section{
+		width : 100%;
+		background-color : #ffffff;
+		color : var(--pri_color);
+		padding : 4rem 4rem 4rem 4rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.twelfth_section_content{
+		
+		width : 100%;
+		font-size : 1.1rem;
+	}	
+	
+	.twelfth_section_heading{
+		font-weight : 600;
+		font-size : 2rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+	}	
+	
+	
+	
+/******************************THIRTEENTH SECTION******************************/
+
+    #thirteenth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 1rem 4rem 1rem;
+    	min-height : auto;
+    	min-height : auto;
+	}   
+
+
+	.thirteenth_section_content{
+		width : 100%;
+		font-size : 1.15rem;
+	}	
+	
+	.thirteenth_section_heading{
+		font-weight : 700;
+		font-size : 2.25rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+        color : var(--accent_color);		
+	}	
+	
+	.finance_heading_flex{
+		display : flex;
+		flex-direction : row;
+		row-gap : 0;
+		column-gap : 0;
+		justify-content : space-between;
+		margin : 100px 0 100px 0;
+		
+	}
+	
+	.finance_heading_flex h3{
+		font-weight : 700;
+		font-size : 1rem;
+	}
+	
+	.cash_flow_heading{
+		font-weight : 600;
+        font-size : 4rem;
+        text-align : center;
+	}
+
+/******************************FOURTEENTH SECTION******************************/
+    #fourteenth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 6rem 4rem 6rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}   
+
+
+	.fourteenth_section_content{
+		width : 100%;
+		font-size : 1.15rem;
+	}	
+	
+	.fourteenth_section_heading{
+		font-weight : 600;
+		font-size : 2.5rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+        color : var(--pri_color);		
+	}	
+	
+
+	
+	.profit_outllook_img{
+		width : 80%;
+		display : block;
+		margin-left : auto;
+		margin-right : auto;
+
+	}
+
+/******************************FIFTEENTH SECTION******************************/
+    #fifteenth_section{
+		width : 100%;
+		background-color : #f1edda7F;
+		color : var(--pri_color);
+		padding : 2rem 1.5rem 2rem 1.5rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}   
+
+
+	.fifteenth_section_content{
+		width : 100%;
+		font-size : 0.75rem;
+	}	
+	
+	.fifteenth_section_heading{
+		font-weight : 600;
+		font-size : 2.rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+        color : var(--pri_color);		
+	}	
+	
+	.main_table_heading{
+		background-color : #4472C4;
+		width : 100% !important;
+	}
+
+
+    .cash_flow_table_body tr:nth-child(even) {
+      background-color: #d9e1f2; 
+    }
+    
+    
+    .cash_flow_table_body tr:nth-child(odd) {
+      background-color: #b4c6e7; 
+    }	
+
+    .balance_row{
+		background-color : #fce4d6 !important;
+	}
+ 
+    .working_capital_row{
+		background-color : #F8CBAD !important;
+	}
+	
+  
+	
+/******************************SIXTEENTH SECTION******************************/
+
+    #sixteenth_section{
+		width : 100%;
+		background-color : #f1edda7F;
+		padding : 2rem 1.5rem 2rem 1.5rem;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}   
+
+
+	.sixteenth_section_content{
+		width : 100%;
+		font-size : 0.75rem;
+	}	
+	
+	.sixteenth_section_heading{
+		font-weight : 600;
+		font-size : 1.75rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+        color : var(--pri_color);		
+	}	
+	
+	.carbon_seq_table{
+		width : 100%;
+	}
+	
+	.carbon_seq_table_heading{
+		
+		background-color : #4472C4;
+		text-align : center;
+		color : #ffffff;
+	}
+	
+	.carbon_seq_table_heading td{
+		color : #ffffff;
+	}
+    .carbon_seq_table_body tr:nth-child(even) {
+      background-color: #d9e1f2; 
+    }
+    
+    
+    .carbon_seq_table_body tr:nth-child(odd) {
+      background-color: #b4c6e7; 
+    }		
+
+/******************************SEVENTEENTH SECTION******************************/
+    #seventeenth_section{
+		width : 100%;
+		background-color : #f1edda7F;
+		padding : 2rem 0.5rem 2rem 0.5rem;
+    	min-height : auto;
+    	min-height : auto;
+	}   
+
+
+	.seventeenth_section_content{
+		width : 100%;
+		font-size : 0.75rem;
+	}	
+	
+	.seventeenth_section_heading{
+		font-weight : 600;
+		font-size : 1.25rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+        color : var(--pri_color);		
+	}	
+	
+	.farming_data_table_heading{
+		background-color : #4472C4;
+		text-align : center;
+		color : #ffffff;		
+	}
+	
+	.farming_data_table td{
+		padding : 0.5rem;
+	}	
+	
+	.farming_data_table_titles td{
+		text-align : center;
+	}
+	
+    .farming_data_table_body tr:nth-child(even) {
+      background-color: #d9e1f2; 
+    }
+    
+    
+    .farming_data_table_body tr:nth-child(odd) {
+      background-color: #b4c6e7; 
+    }	
+	.gross_profit_row{
+		background-color :#f8cbad !important;
+	}	
+	
+/******************************EIGHTTEENTH SECTION******************************/
+    #eighteenth_section{
+		width : 100%;
+		background-color : #f1edda7F;
+		padding : 2rem 0.5rem 2rem 0.5rem;
+    	min-height : auto;
+    	min-height : auto;
+	}   
+
+
+	.eighteenth_section_content{
+		width : 100%;
+		font-size : 0.75rem;
+	}	
+	
+	.eighteenth_section_heading{
+		font-weight : 600;
+		font-size : 1.25rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+        color : var(--pri_color);		
+	}	
+	
+	.agro_data_table_heading{
+		background-color : #4472C4;
+		text-align : center;
+		color : #ffffff;		
+	}
+	.agro_data_table td{
+		padding : 0.75rem;
+	}
+    .agro_data_table_body tr:nth-child(even) {
+      background-color: #d9e1f2; 
+    }
+    
+    
+    .agro_data_table_body tr:nth-child(odd) {
+      background-color: #b4c6e7; 
+    }	
+	.gross_profit_row{
+		background-color :#f8cbad !important;
+	}	
+/******************************NINETEENTH SECTION******************************/
+
+    #nineteenth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 0 4rem 0;
+    	min-height : auto;
+    	min-height : auto;
+	}
+	
+	.nineteenth_section_content{
+		
+		width : 90%;
+		margin : 0 auto 0 auto;
+		font-size : 1.15rem;
+	}	
+	
+	.nineteenth_section_heading{
+		font-weight : 700;
+		font-size : 1.5rem;
+		text-align : center;
+		padding : 0 0 15px 0;
+	}	
+	
+	.ninteenth_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		gap : 20px;
+		margin : 25px 0 25px 0;
+	}
+	
+	.ninteenth_section_flex_2{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		gap : 20px;
+		margin : 25px 0 25px 0;
+	}	
+	
+	.ninteenth_section_flex>div{
+		flex : 1;
+		position : relative;
+	}
+	
+	.ninteenth_section_flex_2>div{
+		flex : 1;
+		position : relative;
+	}	
+	
+
+	
+	#first_pie_shaped_btn, #second_pie_shaped_btn, #third_pie_shaped_btn, #fourth_pie_shaped_btn, #fifth_pie_shaped_btn, #sixth_pie_shaped_btn, #seventh_pie_shaped_btn, #eight_pie_shaped_btn{
+		position : absolute;
+		right : 0;
+		bottom : 0;
+		width : 45px;
+		height : 45px;
+		border-top-left-radius : 100%;
+		border-top-right-radius : 100%;
+		border-bottom-left-radius : 100%;
+		border : double #ffffff 5px;
+		display : flex;
+		align-items : center;
+		justify-content : center;
+		cursor : pointer;
+	}
+	
+	.pie_no{
+		font-size : 1.75rem;
+		font-weight : 700;
+		color : #ffffff;
+		animation : pie_no_animation 3s ease infinite;
+	}
+	
+	@keyframes pie_no_animation{
+		0%{
+			transform : scale(1);
+			opacity : 0.5;
+		}
+		50%{
+			transform : scale(1.2);
+			opacity : 1;
+		}
+		100%{
+			transform : scale(1);
+			opacity : 0.5;
+		}
+		
+	}
+	
+	#first_enabler_heading_container, #second_enabler_heading_container, #third_enabler_heading_container, #fourth_enabler_heading_container, 
+	#fifth_enabler_heading_container, #sixth_enabler_heading_container, #seventh_enabler_heading_container, #eight_enabler_heading_container{
+		position : absolute;
+		width : 100%;
+		height : 100%;
+		background : #000000B2;
+		color : #ffffff;
+        top : 0;
+        left : 0;
+        transform : scale(0);
+        transform-origin : right bottom;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        padding : 5px;		
+	}
+	
+	.enabler_heading{
+		font-weight : 700;
+		text-align : center;
+		font-size : 1.5rem;
+	}
+	
+	@keyframes enabler_heading_container_animation{
+		from{
+			transform : scale(0);
+		}
+		to{
+			transform : scale(1);
+		}
+	}
+	
+	.animate_enabler_heading_container{
+		animation : enabler_heading_container_animation 4s ease forwards;
+	}
+	.ninteenth_section_flex_2>div>p{
+		color : #ffffff;
+		font-weight : 600;
+	}	
+/******************************TWENTIETH SECTION******************************/
+
+    #twentieth_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 0 2rem 0;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.twentieth_section_content{
+		
+		width : 98%;
+		margin : 0 auto 0 auto;
+		font-size : 1.15rem;
+	}	
+	
+	.twentieth_section_heading{
+		font-weight : 600;
+		font-size : 2rem;
+		text-align : center;
+		padding : 0 0 25px 0;
+	}	
+	
+    .twentieth_section_flex {
+      display: flex;
+      flex-direction : row;	  
+      gap: 50px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      justify-content : center;
+      margin : 0 0 50px 0;
+    }
+
+    .card {
+      width: 150px;
+      height: 150px;
+      transition: transform 0.5s ease;
+      border-radius: 15px;
+    }
+    
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    
+    /* Side images stay back */
+    .upper_left, .upper_right{
+      transform: translateZ(-40px) scale(1.025);
+      opacity: 0.85;
+      z-index: 2;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);  
+    }
+    
+    .left, .right{
+      transform: translateZ(-80px) scale(0.8);
+      opacity: 0.85;
+    }
+    
+    
+    /* Center image comes forward */
+    .center {
+      transform: translateZ(120px) scale(1.1);
+      z-index: 3;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+      margin-left : 7.5px;
+    }
+	.com_dev_text{
+	    font-size : 1.2rem;
+	}
+	.com_dev_text>span:first-child{
+		color : var(--accent_color);
+		font-weight : 700;
+	}
+
+/******************************TWENTY FIRST SECTION******************************/
+
+    #twenty_first_section{
+		width : 100%;
+		background-color : var(--sec_color);
+		color : var(--pri_color);
+		padding : 4rem 0 2rem 0;
+    	min-height : auto;
+    	min-height : auto;
+        /* scroll-snap-align : start;		 */
+	}
+	
+	.twenty_first_section_content{
+		width : 90%;
+		margin : 0 auto 0 auto;
+		font-size : 1.15rem;
+	}	
+	
+	.twenty_first_section_heading{
+		font-weight : 600;
+		font-size : 2rem;
+		text-align : center;
+		padding : 0 0 25px 0;
+	}	
+	
+    .twenty_first_section_flex {
+      display: flex;
+	  flex-direction : column;
+      gap: 200px;
+	  margin : 100px 0 0 0;
+    }	
+	.twenty_first_section_flex>div{
+	     text-align : center;	
+	}
+	
+	.contact_category{
+		font-weight : 600;
+		padding : 0 0 25px 0;
+		text-decoration : underline;
+		font-size : 1.5rem;		
+	}
+	
+	.contact_name{
+		font-size : 1.75rem;
+	}
+	.contact_position{
+		font-size : 1.25rem;
+	}	
+    .contact_mail{
+		font-size : 1.25rem;
+	}	
+	
+	
+	
+/****END*****/
+}	

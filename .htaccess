@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# -----------------------------------
+# 1. EXCLUDE STATIC ASSETS (CRITICAL)
+# -----------------------------------
+RewriteRule ^(COMPONENTS|CSS|JS|IMAGES)/ - [L]
+
+# -----------------------------------
+# 2. DO NOT TOUCH REAL FILES/FOLDERS
+# -----------------------------------
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# -----------------------------------
+# 3. REMOVE .html FROM URL
+# -----------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?]
+RewriteRule ^ %1 [R=301,L]
+
+# -----------------------------------
+# 4. SERVE .html FILES INTERNALLY
+# -----------------------------------
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# -----------------------------------
+# 5. DEFAULT INDEX
+# -----------------------------------
+DirectoryIndex index.html

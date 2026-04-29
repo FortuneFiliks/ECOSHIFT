@@ -1,0 +1,560 @@
+
+
+<!--------CSS------------->
+
+@media(min-width : 1200px){ 
+    .mobile_left_menu_section{
+    	width : 40%;
+    	position : fixed;
+    	height : 100%;
+    	background-color :#e3dacc;
+    	display : none;
+    	top :0;
+    	left : 0;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .mobile_menu_item{
+    	height : 85px;
+    	width : 100%;
+    	display : flex;
+    	align-items : center;
+    	padding-left : 25px;
+    	position : relative;
+    	/* justify-content : center; */
+    }
+    
+    .mobile_menu_image{
+    	width : 85px;
+    	height : 82px;
+    	border-radius : 2px;
+    	
+    }
+    
+    #mobile_team_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 80px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 180px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    #mobile_liberia_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 80px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 68px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    
+    #mobile_nigeria_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 100px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 132px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    
+    
+    #mobile_carbon_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 100px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    #mobile_agriculture_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 50px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 36px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    #mobile_security_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 50px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 100px;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    #mobile_press_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 80px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    #mobile_climate_dropdown{
+    	display : none;
+    	position : absolute;
+    	width : 100%;
+    	height : 100px;
+    	background : #ffffff;
+    	z-index : 1;
+    	list-style-type : none;
+    	border-radius : 5px;
+    	top : 0;
+    	left : 150px;
+    	padding-left : 10px;
+    	padding-top : 10px;
+    	cursor : pointer;
+    	border : solid 1px #000000;
+    	box-shadow : 0px 3px 1px 1px #3e3e3e4C;
+    }
+    
+    .mobile_team_dropdown_item,.mobile_liberia_dropdown_item, .mobile_nigeria_dropdown_item, .mobile_carbon_dropdown_item, .mobile_agriculture_dropdown_item, .mobile_security_dropdown_item, .mobile_press_dropdown_item, .mobile_climate_dropdown_item{
+    	color : #666666;
+    }
+    .mobile_team_dropdown_item:hover,.mobile_liberia_dropdown_item:hover, .mobile_nigeria_dropdown_item:hover, .mobile_carbon_dropdown_item:hover, .mobile_agriculture_dropdown_item:hover, .mobile_security_dropdown_item:hover, .mobile_press_dropdown_item:hover, .mobile_press_dropdown_item:hover{
+      color: #16181b;
+      text-decoration: none;
+      background-color: #e9ecef;
+    }
+    
+    
+    
+    
+    .mobile_menu_item:not(:last-child){
+    	border-bottom : solid 0.5px #29484a;
+    }
+    
+    .mobile_menu_link{
+    	color : #29484a;
+    	font-weight : 600;
+    	padding-left : 20px;
+    	cursor : pointer;
+    	font-size : 1.2em;
+    }
+    
+    
+    .mobile_menu_link:hover{
+    	color : #29484a;
+    	font-weight : 600;
+    	font-size : 1.25em;
+    	padding-left : 20px;
+    	cursor : pointer;
+    }
+
+}
+
+
+<!------------------HTML------------------------>
+
+
+		  <section class = "mobile_menu_section">
+		      			  
+			  <div class = "mobile_menu_list">			  
+				 <!-----ABOUT----->
+			     <div class = "mobile_menu_item dropdown" id = "mobile_about_left_item">
+				     <img src = "IMAGES/pexels-adrian-mohammad-487852-12241582.jpg" class = "img-fluid mobile_menu_image">
+                    <a class = "mobile_menu_link dropdown-toggle" data-toggle = "dropdown"> ABOUT   </a>
+					
+					<div class = "dropdown-menu" id = "mobile_about_left_menu">
+                        <a class = "dropdown-item" href = "about.php"> Company Overview </a>
+						
+					    <a class = "dropdown-item" id = "team_object"> EGI Team </a>
+                          <!---TEAM MENU---->
+						  <ul id = "mobile_team_dropdown">
+						     <li> <a class = "mobile_team_dropdown_item"> Senior Management </a> </li>
+						     <li> <a class = "mobile_team_dropdown_item"> Board Members </a> </li>
+						  </ul>											
+						
+						
+					</div>
+					
+                 </div>
+
+				 
+			     <!-----SOLUTIONS----->
+			     <div class = "mobile_menu_item dropdown" id = "mobile_solutions_left_item">
+				     <img src = "IMAGES/phlair-3lyx_HdvbBA-unsplash4.jpg" class = "img-fluid mobile_menu_image">
+                    <a class = "menu_link dropdown-toggle" data-toggle = "dropdown"> SOLUTIONS </a>
+					<div class = "dropdown-menu" id = "mobile_solutions_left_menu">
+					    <a class = "dropdown-item" href = "carbon.php"> Carbon Sequestration </a>
+						<a class = "dropdown-item" href = ""> Mechanized Farming </a>
+						<a class = "dropdown-item" href = ""> Agro-processing </a>
+						<a class = "dropdown-item" href = ""> Waste To Energy </a>
+						<a class = "dropdown-item" href = ""> Mass Housing </a>
+						<a class = "dropdown-item" href = ""> Ecotourism </a>
+					</div>
+                 </div>
+				 
+				 
+				 <!-----PROJECTS----->
+			     <div class = "mobile_menu_item dropright" id = "mobile_projects_left_item">
+				     <img src = "IMAGES/earth-35374014.jpg" class = "img-fluid mobile_menu_image">
+                     <a class = "mobile_menu_link dropdown-toggle" data-toggle = "dropdown"> PROJECTS </a>
+					<div class = "dropdown-menu" id = "mobile_projects_left_menu">
+					    <a class = "dropdown-item" href = "20241209 Angola Green Asset and MEGIC-5.pdf" target = "_blank"> Angola </a>
+					    <a class = "dropdown-item"> Tanzania </a>
+					    <a class = "dropdown-item" id = "mobile_liberia_object"> Liberia </a>
+
+						   <ul id = "mobile_liberia_dropdown">
+						      <li class = "mobile_liberia_dropdown_item"> Government </li>
+							  <li class = "mobile_liberia_dropdown_item"> Private </li>
+						   </ul>						
+						
+						
+					    <a class = "dropdown-item" href = ""> Sierra Leone </a>
+					    <a class = "dropdown-item" id = "mobile_nigeria_object"> Nigeria </a>
+						
+						   <ul id = "mobile_nigeria_dropdown">
+						      <li class = "mobile_nigeria_dropdown_item"> Taraba </li>
+							  <li class = "mobile_nigeria_dropdown_item"> Crossriver </li>
+							  <li class = "mobile_nigeria_dropdown_item"> Delta </li>
+						   </ul>
+						
+						
+					    <a class = "dropdown-item" href = ""> Republic Of Congo </a>
+					    <a class = "dropdown-item" href = ""> Democratic Republic Of Congo </a>
+					    <a class = "dropdown-item" href = ""> Guinea </a>
+					    <a class = "dropdown-item" href = ""> Cameroun </a>
+					    <a class = "dropdown-item" href = ""> Gabon </a>
+					    <a class = "dropdown-item" href = ""> Equitorial Guinea </a>
+						
+					</div>
+                 </div>
+
+				 <!------PORTFOLIO----->
+
+                 <div class = "mobile_menu_item dropdown" id = "mobile_portfolio_left_item">
+				     <img src = "IMAGES/ady-teenagerinro-kwIbdzJa_yA-unsplash2.jpg" class = "img-fluid mobile_menu_image">
+				    <a class = "mobile_menu_link dropdown-toggle" data-toggle = "dropdown"> PORTFOLIO COMPANIES </a>
+                    <div class = "dropdown-menu" id = "mobile_portfolio_left_menu">
+                        <a class = "dropdown-item"> EGI Energy </a>
+                        <a class = "dropdown-item"> EGI Health </a>
+                        <a class = "dropdown-item"> EGI Consultancy </a>
+                        <a class = "dropdown-item"> EGI Advisory </a>
+                    </div>
+				 </div>
+
+
+
+                 <!-----PARTNERS----->
+			     <div class = "mobile_menu_item dropdown" id = "mobile_partners_left_item">
+                     <img src = "IMAGES/pexels-mikhail-nilov-8730179.jpg" class = "img-fluid mobile_menu_image">
+                     <a class = "mobile_menu_link dropdown-toggle" data-toggle = "dropdown"> PARTNERS  </a>
+					<div class = "dropdown-menu" id = "mobile_partners_left_menu">
+					    
+						<a class = "dropdown-item" id = "mobile_carbon_object"> Carbon Sequestration </a>
+		                   <ul id = "mobile_carbon_dropdown">
+						      <li class = "mobile_carbon_dropdown_item"> Granite Capital Advisors Ltd </li>
+							  <li class = "mobile_carbon_dropdown_item"> BISEN </li>
+							  
+						   </ul>
+                        
+					    <a class = "dropdown-item" id = "mobile_agriculture_object"> Agriculture </a>
+		                   <ul id = "mobile_agriculture_dropdown">
+						      <li class = "mobile_agriculture_dropdown_item"> UYFF </li>
+						   </ul>						
+						
+						
+					    <a class = "dropdown-item"> Agro-processing </a>
+					    <a class = "dropdown-item" id = "mobile_security_object"> Security </a>
+		                   <ul id = "mobile_security_dropdown">
+						      <li class = "mobile_security_dropdown_item"><a href = "http://foxfirecs.com/"> FOXFIRE </a></li>
+						   </ul>                               						
+						
+						
+						
+						
+						<a class = "dropdown-item"> Construction </a>
+						<a class = "dropdown-item"> Health </a>
+		                   <!-- <ul class = "health_menu"> -->
+						      <!-- <li class = "health_list"><a href = "https://www.profohmed.org/"> PROFOH </a></li> -->
+						   <!-- </ul>						 -->
+						
+						
+					</div>				 
+                 </div>
+
+
+                 <!-------MEDIA ------->				 
+			     <div class = "mobile_menu_item" id = "mobile_media_left_item">
+                     <img src = "IMAGES/poster-2899096.jpg" class = "img-fluid mobile_menu_image">
+                    <a class = "mobile_menu_link dropdown-toggle" data-toggle = "dropdown"href = ""> MEDIA </i></a>
+					<div class = "dropdown-menu" id = "mobile_media_left_menu">
+					   <a class = "dropdown-item" id = "mobile_press_object"> Press Release </a>
+		                   <ul id = "mobile_press_dropdown">
+						      <li class = "mobile_press_dropdown_list"> Internal </li>
+						      <li class = "mobile_press_dropdown_list"><a href = "external.php"> External </a></li>
+						   </ul>						
+						
+						
+					    <a class = "dropdown-item" id = "mobile_climate_object"> Climate Change </a>
+						
+		                   <ul id = "mobile_climate_dropdown">
+						      <li class = "mobile_climate_dropdown_list"> Events </li>
+						      <li class = "mobile_climate_dropdown_list"> Conferences </li>
+						      <li class = "mobile_climate_dropdown_list"> Publications </li>
+						   </ul>						
+						
+                        <a class = "dropdown-item"> Gallery </a>
+					</div>
+                 </div>
+
+               <!-----CONTACT----->             
+			 
+                     
+		         <div class = "mobile_menu_item"><img src = "IMAGES/telephone-612061_640.jpg" class = "img-fluid menu_image"><a class = "mobile_menu_link" href = "mailto:info@ecogreeninvestments.com"> CONTACT </a></div>	
+			   
+               <!-----SEARCH----->             
+				 
+				 
+				 
+		  
+			  </div>		  
+		  </section>
+		  
+		  
+		  
+		  
+		  <!-----JAVASCRIPT------>
+//*****LEFT MENU SECTION*****//
+
+//TEAM DROPDOWN
+
+
+let get_Team_Object = document.getElementById("team_object");
+let get_Team_Dropdown = document.getElementById("team_dropdown");
+
+
+function view_Team_Dropdown(){
+	get_Team_Dropdown.style.display = "block";
+	
+}
+function close_Team_Dropdown(){
+	get_Team_Dropdown.style.display = "none";
+}
+
+get_Team_Object.addEventListener("mouseover", view_Team_Dropdown);
+get_Team_Object.addEventListener("mouseout", close_Team_Dropdown);
+get_Team_Dropdown.addEventListener("mouseover", view_Team_Dropdown);
+get_Team_Dropdown.addEventListener("mouseout", close_Team_Dropdown);
+
+
+
+
+//LIBERIA DROPDOWN
+
+
+let get_Liberia_Object = document.getElementById("liberia_object");
+let get_Liberia_Dropdown = document.getElementById("liberia_dropdown");
+
+
+function view_Liberia_Dropdown(){
+	get_Liberia_Dropdown.style.display = "block";
+}
+function close_Liberia_Dropdown(){
+	get_Liberia_Dropdown.style.display = "none";
+}
+
+get_Liberia_Object.addEventListener("mouseover", view_Liberia_Dropdown);
+get_Liberia_Object.addEventListener("mouseout", close_Liberia_Dropdown);
+get_Liberia_Dropdown.addEventListener("mouseover", view_Liberia_Dropdown);
+get_Liberia_Dropdown.addEventListener("mouseout", close_Liberia_Dropdown);
+
+
+
+
+//NIGERIA DROPDOWN
+
+
+let get_Nigeria_Object = document.getElementById("nigeria_object");
+let get_Nigeria_Dropdown = document.getElementById("nigeria_dropdown");
+
+
+function view_Nigeria_Dropdown(){
+	get_Nigeria_Dropdown.style.display = "block";
+}
+function close_Nigeria_Dropdown(){
+	get_Nigeria_Dropdown.style.display = "none";
+}
+
+get_Nigeria_Object.addEventListener("mouseover", view_Nigeria_Dropdown);
+get_Nigeria_Object.addEventListener("mouseout", close_Nigeria_Dropdown);
+get_Nigeria_Dropdown.addEventListener("mouseover", view_Nigeria_Dropdown);
+get_Nigeria_Dropdown.addEventListener("mouseout", close_Nigeria_Dropdown);
+
+
+
+
+//CARBON DROPDOWN
+
+
+let get_Carbon_Object = document.getElementById("carbon_object");
+let get_Carbon_Dropdown = document.getElementById("carbon_dropdown");
+
+
+function view_Carbon_Dropdown(){
+	get_Carbon_Dropdown.style.display = "block";
+}
+function close_Carbon_Dropdown(){
+	get_Carbon_Dropdown.style.display = "none";
+}
+
+get_Carbon_Object.addEventListener("mouseover", view_Carbon_Dropdown);
+get_Carbon_Object.addEventListener("mouseout", close_Carbon_Dropdown);
+get_Carbon_Dropdown.addEventListener("mouseover", view_Carbon_Dropdown);
+get_Carbon_Dropdown.addEventListener("mouseout", close_Carbon_Dropdown);
+
+
+
+//AGRICULTURE DROPDOWN
+
+
+let get_Agriculture_Object = document.getElementById("security_object");
+let get_Agriculture_Dropdown = document.getElementById("security_dropdown");
+
+
+function view_Agriculture_Dropdown(){
+	get_Agriculture_Dropdown.style.display = "block";
+}
+function close_Agriculture_Dropdown(){
+	get_Agriculture_Dropdown.style.display = "none";
+}
+
+get_Agriculture_Object.addEventListener("mouseover", view_Agriculture_Dropdown);
+get_Agriculture_Object.addEventListener("mouseout", close_Agriculture_Dropdown);
+get_Agriculture_Dropdown.addEventListener("mouseover", view_Agriculture_Dropdown);
+get_Agriculture_Dropdown.addEventListener("mouseout", close_Agriculture_Dropdown);
+
+
+
+//SECURITY DROPDOWN
+
+
+let get_Security_Object = document.getElementById("agriculture_object");
+let get_Security_Dropdown = document.getElementById("agriculture_dropdown");
+
+
+function view_Security_Dropdown(){
+	get_Security_Dropdown.style.display = "block";
+}
+function close_Security_Dropdown(){
+	get_Security_Dropdown.style.display = "none";
+}
+
+get_Security_Object.addEventListener("mouseover", view_Security_Dropdown);
+get_Security_Object.addEventListener("mouseout", close_Security_Dropdown);
+get_Security_Dropdown.addEventListener("mouseover", view_Security_Dropdown);
+get_Security_Dropdown.addEventListener("mouseout", close_Security_Dropdown);
+
+
+
+
+
+//PRESS DROPDOWN
+
+
+let get_Press_Object = document.getElementById("press_object");
+let get_Press_Dropdown = document.getElementById("press_dropdown");
+
+
+function view_Press_Dropdown(){
+	get_Press_Dropdown.style.display = "block";
+}
+function close_Press_Dropdown(){
+	get_Press_Dropdown.style.display = "none";
+}
+
+get_Press_Object.addEventListener("mouseover", view_Press_Dropdown);
+get_Press_Object.addEventListener("mouseout", close_Press_Dropdown);
+get_Press_Dropdown.addEventListener("mouseover", view_Press_Dropdown);
+get_Press_Dropdown.addEventListener("mouseout", close_Press_Dropdown);
+
+
+
+
+//CLIMATE DROPDOWN
+
+
+let get_Climate_Object = document.getElementById("climate_object");
+let get_Climate_Dropdown = document.getElementById("climate_dropdown");
+
+
+function view_Climate_Dropdown(){
+	get_Climate_Dropdown.style.display = "block";
+}
+function close_Climate_Dropdown(){
+	get_Climate_Dropdown.style.display = "none";
+}
+
+get_Climate_Object.addEventListener("mouseover", view_Climate_Dropdown);
+get_Climate_Object.addEventListener("mouseout", close_Climate_Dropdown);
+get_Climate_Dropdown.addEventListener("mouseover", view_Climate_Dropdown);
+get_Climate_Dropdown.addEventListener("mouseout", close_Climate_Dropdown);		  
